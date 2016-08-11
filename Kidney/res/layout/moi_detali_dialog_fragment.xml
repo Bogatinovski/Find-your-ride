@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background" >
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TableRow
+            style="?android:listSeparatorTextViewStyle"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textViewOd"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:text="Поаѓа од:"
+                android:textSize="@dimen/layout_small_textView"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewOdText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:text="Град поаѓање"
+                android:textSize="@dimen/layout_small_textView"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            style="?android:listSeparatorTextViewStyle"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textViewDo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:text="Дестинација:"
+                android:textSize="@dimen/layout_small_textView"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewDoText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:text="Град дестинација"
+                android:textSize="@dimen/layout_small_textView"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            style="?android:listSeparatorTextViewStyle"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textViewVremePoaganje"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:text="Време на поаѓање:"
+                android:textSize="@dimen/layout_small_textView"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewVremePoaganjeText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:text="Време иде тука"
+                android:textSize="@dimen/layout_small_textView"
+                android:maxLines="1"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            style="?android:listSeparatorTextViewStyle"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textViewCena"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:text="Цена:"
+                android:textSize="@dimen/layout_small_textView"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewCenaText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:text="Цената иде тука"
+                android:textSize="@dimen/layout_small_textView"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            style="?android:listSeparatorTextViewStyle"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textViewSlobodniMesta"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:text="Слободни места:"
+                android:textSize="@dimen/layout_small_textView"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewSlobodniMestaText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:text="слободни места"
+                android:textSize="@dimen/layout_small_textView"
+                android:textStyle="bold" />
+        </TableRow>
+        <TableRow
+            style="?android:listSeparatorTextViewStyle"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textViewIme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:text="Име:"
+                android:textSize="@dimen/layout_small_textView"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewImeText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:text="Името овде"
+                android:textSize="@dimen/layout_small_textView"
+                android:textStyle="bold" />
+        </TableRow>
+        <TableRow
+            style="?android:listSeparatorTextViewStyle"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textViewTelefon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:text="Телефон:"
+                android:textSize="@dimen/layout_small_textView"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewTelefonText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:text="Телефон овде"
+                android:textSize="@dimen/layout_small_textView"
+                android:textStyle="bold" />
+        </TableRow>
+        
+        <TableRow
+            style="?android:listSeparatorTextViewStyle"
+            android:orientation="horizontal" >
+			
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:textSize="@dimen/layout_small_textView"
+                android:textStyle="bold" />
+            
+            <Button
+                android:id="@+id/securePasenger"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:text="Додади патник"
+                android:textSize="@dimen/layout_small_buttons"
+                android:textStyle="bold" />
+            
+        </TableRow>
+        <TableRow
+            style="?android:listSeparatorTextViewStyle"
+            android:orientation="horizontal" >
+            
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:textSize="@dimen/layout_small_textView"
+                android:textStyle="bold" />
+            
+            <Button
+                android:id="@+id/removePasenger"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:text="Одземи патник"
+                android:textSize="@dimen/layout_small_buttons"
+                android:textStyle="bold" />
+            
+        </TableRow>
+        <TableRow
+            style="?android:listSeparatorTextViewStyle"
+            android:orientation="horizontal" >
+            
+            <Button
+                android:id="@+id/removeTravel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:text="Откажи"
+                android:textSize="@dimen/layout_small_buttons"
+                android:textStyle="bold" />
+            
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
+

@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context="com.bsod.kidney.MainScreenActivity"
+    android:weightSum="1" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="0.1"
+        android:weightSum="1" >
+
+        <AutoCompleteTextView
+            android:id="@+id/traveler_odEditText"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.425"
+            android:textSize="@dimen/layout_small_textView"
+            android:hint="@string/edit_text_hint_od" 
+            android:maxLines="1" >
+
+            <requestFocus />
+        </AutoCompleteTextView>
+
+        <AutoCompleteTextView
+            android:id="@+id/traveler_doEditText"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:textSize="@dimen/layout_small_textView"
+            android:layout_weight="0.425"
+            android:hint="@string/edit_text_hint_do"
+            android:maxLines="1" >
+        </AutoCompleteTextView>
+
+        <ImageView
+            android:layout_weight="0.15"
+            android:id="@+id/traveler_send_button"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:src="@drawable/ic_action_search" />
+    </LinearLayout>
+
+    <ListView
+        android:layout_weight="0.9"
+        android:id="@+id/traveler_ListView"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp" >
+    </ListView>
+
+</LinearLayout>

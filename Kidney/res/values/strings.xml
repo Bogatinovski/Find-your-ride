@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Kidney</string>
+    <string name="action_settings">Settings</string>
+    <string name="edit_text_hint_od">Од</string>
+    <string name="edit_text_hint_do">До</string>
+    
+
+</resources>

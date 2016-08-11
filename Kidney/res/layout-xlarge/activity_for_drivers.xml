@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:background="@drawable/background"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+
+<RelativeLayout 
+    android:orientation="vertical" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    
+    >
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:layout_weight="0.5"
+            android:hint="Од"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText2"
+            android:layout_gravity="right"
+            android:layout_weight="0.5"
+            android:hint="До"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Избери Датум"
+        android:id="@+id/btnChooseDate"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Избери Време"
+        android:id="@+id/btnChooseTime"
+        android:layout_below="@+id/btnChooseDate"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Дата"
+        android:id="@+id/tvDate"
+        android:layout_above="@+id/btnChooseTime"
+        android:layout_toRightOf="@+id/btnChooseDate"
+        android:layout_toEndOf="@+id/btnChooseDate"
+        android:layout_marginLeft="93dp"
+        android:layout_marginStart="93dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Време"
+        android:id="@+id/tvTime"
+        android:layout_alignBottom="@+id/btnChooseTime"
+        android:layout_alignLeft="@+id/tvDate"
+        android:layout_alignStart="@+id/tvDate" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Места"
+        android:id="@+id/textView"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="48dp"
+        android:layout_below="@+id/btnChooseTime"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/edtSlobMesta"
+        android:layout_toStartOf="@+id/edtSlobMesta" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtSlobMesta"
+        android:inputType="number"
+        android:layout_alignTop="@+id/textView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/btnChooseDate"
+        android:layout_toEndOf="@+id/btnChooseDate" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Цена"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/edtSlobMesta"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtCena"
+        android:inputType="number"
+        android:layout_below="@+id/edtSlobMesta"
+        android:layout_alignLeft="@+id/edtSlobMesta"
+        android:layout_alignStart="@+id/edtSlobMesta"
+        android:layout_alignRight="@+id/edtSlobMesta"
+        android:layout_alignEnd="@+id/edtSlobMesta" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Телефон"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/edtCena"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtTelefon"
+        android:inputType="phone"
+        android:layout_below="@+id/edtCena"
+        android:layout_alignLeft="@+id/edtCena"
+        android:layout_alignStart="@+id/edtCena"
+        android:layout_alignRight="@+id/edtCena"
+        android:layout_alignEnd="@+id/edtCena" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Опис"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/edtTelefon"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="36dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtDescription"
+        android:hint="Дополнителен опис"
+        android:minLines="3"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Објави"
+        android:id="@+id/btnPublish"
+        android:layout_below="@+id/edtDescription"
+        android:layout_alignRight="@+id/edtTelefon"
+        android:layout_alignEnd="@+id/edtTelefon"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+</ScrollView>
